@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.kafka:kafka-clients:3.2.0'
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    // Kafka Connect API with the appropriate version matching your Kafka version
+    implementation 'org.apache.kafka:kafka-connect-api:2.8.0'
+
+    // Kafka clients (you may need these if your connector interacts directly with Kafka)
+    implementation 'org.apache.kafka:kafka-clients:2.8.0'
+
+    // Other dependencies your project may require
+    // implementation 'group:artifact:version'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jar {
+    // Make sure to include all necessary resources in your JAR file
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    // You may need to include specific files/resources in your JAR, adjust this according to your project structure
+    include 'META-INF/**'
+}
