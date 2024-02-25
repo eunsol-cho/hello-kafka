@@ -1,4 +1,4 @@
-package org.esjo.basic.staticmembership;
+package org.esjo.basic;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
@@ -7,8 +7,8 @@ import org.apache.kafka.common.serialization.StringSerializer;
 
 import java.util.Properties;
 
-import static org.esjo.basic.staticmembership.ConfigConstants.BOOTSTRAP_SERVERS;
-import static org.esjo.basic.staticmembership.ConfigConstants.TOPIC_NAME;
+import static org.esjo.basic.ConfigConstants.BOOTSTRAP_SERVERS;
+import static org.esjo.basic.ConfigConstants.TOPIC_NAME;
 
 public class SimpleProducer {
     public static void main(String[] args) {

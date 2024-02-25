@@ -1,4 +1,4 @@
-package org.esjo.basic.staticmembership;
+package org.esjo.basic;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
@@ -10,12 +10,12 @@ import java.time.Duration;
 import java.util.Collections;
 import java.util.Properties;
 
-import static org.esjo.basic.staticmembership.ConfigConstants.BOOTSTRAP_SERVERS_01;
+import static org.esjo.basic.staticmembership.ConfigConstants.BOOTSTRAP_SERVERS_03;
 import static org.esjo.basic.staticmembership.ConfigConstants.TOPIC_NAME;
 
-public class SimpleConsumer01 {
+public class SimpleConsumer03 {
     public static void main(String[] args) {
-        String bootstrapServers = BOOTSTRAP_SERVERS_01; // Kafka 브로커 주소 수정
+        String bootstrapServers = BOOTSTRAP_SERVERS_03; // Kafka 브로커 주소 수정
         String groupId = "esjo-group"; // 컨슈머 그룹 ID 설정
         String topicName = TOPIC_NAME; // 토픽 이름 설정
 
@@ -29,7 +29,7 @@ public class SimpleConsumer01 {
 
         /*if (ConfigConstants.STATIC_MEMBERSHIP_FLAG) {
             // 고유한 group.instance.id 설정
-            properties.setProperty(ConsumerConfig.GROUP_INSTANCE_ID_CONFIG, "instance-id-01");
+            properties.setProperty(ConsumerConfig.GROUP_INSTANCE_ID_CONFIG, "instance-id-03");
             // 세션 타임아웃 설정 (1,000초)
             properties.setProperty(ConsumerConfig.SESSION_TIMEOUT_MS_CONFIG, "1000000");
         }*/
@@ -44,7 +44,7 @@ public class SimpleConsumer01 {
         while (true) {
             ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
             for (ConsumerRecord<String, String> record : records) {
-                System.out.printf("[SimpleConsumer01] Received message - Topic: %s, Partition: %d, Offset: %d, Key: %s, Value: %s%n",
+                System.out.printf("[SimpleConsumer03] Received message - Topic: %s, Partition: %d, Offset: %d, Key: %s, Value: %s%n",
                         record.topic(), record.partition(), record.offset(), record.key(), record.value());
             }
         }

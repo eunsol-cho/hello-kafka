@@ -8,7 +8,7 @@ import org.apache.kafka.common.serialization.StringSerializer;
 
 import java.util.Properties;
 
-import static org.esjo.basic.staticmembership.ConfigConstants.BOOTSTRAP_SERVERS_01;
+import static org.esjo.basic.ConfigConstants.BOOTSTRAP_SERVERS_01;
 
 public class TransactionProducer {
     public static void main(String[] args) {

@@ -5,7 +5,9 @@
 💻 [Source code](https://github.com/eunsol-cho/hello-kafka/tree/main/basic) <br>
 ✏️ [Summary](https://golden-age-825.notion.site/b8cacd9d0db54901a67b736888465803?pvs=4) <br>
 
-🪣 kafka 실습 환경구성
+<details>
+<summary>🪣 kafka 실습 환경구성</summary>
+- 구성 : zookper(1) + kafaka(3) + kafdrop(1)
 ```yml
 version: '3'
 services:
@@ -80,3 +82,9 @@ services:
       - kafka2
       - kafka3%
 ```
+</details>
+
+## [카프카 스트림즈와 ksqlDB 정복](https://m.yes24.com/Goods/Detail/115226495)
+
+💻 [Source code](https://github.com/eunsol-cho/hello-kafka/tree/main/streams) <br>
+✏️ [Summary](https://golden-age-825.notion.site/ksqlDB-a8eaa4f2668b453fb4dadf3c91c673c6?pvs=4) <br>

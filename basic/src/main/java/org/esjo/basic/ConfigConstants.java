@@ -1,4 +1,4 @@
-package org.esjo.basic.staticmembership;
+package org.esjo.basic;
 
 public class ConfigConstants {
 

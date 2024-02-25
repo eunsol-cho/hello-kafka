@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'org.esjo'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.kafka:kafka-streams:2.7.0'
+}
+
+task runDSL(type: JavaExec) {
+    mainClass = 'org.esjo.example.DslExample'
+    classpath sourceSets.main.runtimeClasspath
+}
+
+task runProcessorAPI(type: JavaExec) {
+    mainClass = 'org.esjo.example.ProcessorApiExample'
+    classpath sourceSets.main.runtimeClasspath
+}

@@ -1,4 +1,4 @@
-package org.esjo.basic.staticmembership;
+package org.esjo.basic;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;

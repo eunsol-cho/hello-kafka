@@ -10,7 +10,7 @@ import java.time.Duration;
 import java.util.Collections;
 import java.util.Properties;
 
-import static org.esjo.basic.staticmembership.ConfigConstants.BOOTSTRAP_SERVERS_01;
+import static org.esjo.basic.ConfigConstants.BOOTSTRAP_SERVERS_01;
 
 public class TransactionConsumer {
     public static void main(String[] args) {

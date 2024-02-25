@@ -1,2 +1,5 @@
 rootProject.name = 'hello-kafka'
 
+include(":basic")
+include(":streams")
+include(":streams:ch02")
