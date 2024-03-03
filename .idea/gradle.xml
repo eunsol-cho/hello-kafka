@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/streams" />
             <option value="$PROJECT_DIR$/streams/ch02" />
             <option value="$PROJECT_DIR$/streams/ch03" />
+            <option value="$PROJECT_DIR$/streams/ch04" />
           </set>
         </option>
       </GradleProjectSettings>

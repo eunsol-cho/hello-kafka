@@ -1,0 +1,17 @@
+buildscript {
+
+}
+
+subprojects {
+
+    apply plugin: 'java'
+
+    repositories {
+        mavenCentral()
+        gradlePluginPortal()
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+}

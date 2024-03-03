@@ -1,17 +1,8 @@
 plugins {
-    id 'java'
-    //id 'application'
     //id 'com.commercehub.gradle.plugin.avro' version '1.7.2'
-    //id 'com.commercehub.gradle.plugin.avro' version '1.5.0'
 }
 
-group = 'org.esjo'
-version = '1.0-SNAPSHOT'
-
 repositories {
-    mavenCentral()
-
-    gradlePluginPortal()
     // required for schema-registry-compatible Avro Serdes
     maven {
         //url "https://dl.bintray.com/gradle/gradle-plugins"
@@ -20,7 +11,6 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.apache.kafka:kafka-streams:2.7.0'
 
     // gson
     implementation 'com.google.code.gson:gson:2.8.6'
@@ -32,8 +22,6 @@ dependencies {
     //implementation 'org.apache.avro:avro:1.10.1'
     implementation 'org.apache.avro:avro:1.11.1'
     //implementation 'com.mitchseymour:kafka-registryless-avro-serdes:1.0.0'
-    // lombok
-    //implementation 'org.projectlombok:lombok:1.18.20'
 
 }
 
