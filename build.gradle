@@ -2,7 +2,7 @@ buildscript {
 
 }
 
-subprojects {
+allprojects {
 
     apply plugin: 'java'
 
