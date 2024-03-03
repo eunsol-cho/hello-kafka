@@ -8,6 +8,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/basic" />
+            <option value="$PROJECT_DIR$/streams" />
+            <option value="$PROJECT_DIR$/streams/ch02" />
+            <option value="$PROJECT_DIR$/streams/ch03" />
           </set>
         </option>
       </GradleProjectSettings>
